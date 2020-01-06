@@ -13,6 +13,6 @@ define([
 		},
 		"ExceptionTest": true,
 		"ExpectedOutput": { message: "Error: The state of the module was invalid." },
-		"Debug": true
+		"Debug": false
 	};
 });

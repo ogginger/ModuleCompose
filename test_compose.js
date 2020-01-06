@@ -15,7 +15,8 @@ define([
   "tests/compose_DependenciesNotArray_ThrowsErrorDependenciesNotArray",
   "tests/compose_hasMultipleExports_ReturnsModuleWithMultipleExports",
   "tests/compose_hasName_ReturnsModuleWithName",
-  "tests/compose_NameNotString_ThrowsErrorNameNotString"
+  "tests/compose_NameNotString_ThrowsErrorNameNotString",
+  "tests/compose_hasAll_ReturnsModuleWithAll"
 ], function(
   TestSuite,
   log,
@@ -31,25 +32,27 @@ define([
   compose_DependenciesNotArray_ThrowsErrorDependenciesNotArray,
   compose_hasMultipleExports_ReturnsModuleWithMultipleExports,
   compose_hasName_ReturnsModuleWithName,
-  compose_NameNotString_ThrowsErrorNameNotString
+  compose_NameNotString_ThrowsErrorNameNotString,
+  compose_hasAll_ReturnsModuleWithAll
 ) {
   return TestSuite.extend({
     "initialize": function() {
       log("test_compose initialized successfully!");
       var xTestSuite = this;
       xTestSuite.set( "MethodUnderTest", "compose" );
-        //xTestSuite.add( compose_onlyContent_ReturnsModuleWithContent ); 
-        //xTestSuite.add( compose_InvalidState_ThrowsErrorInvalidState );  
-        //xTestSuite.add( compose_hasHeaders_ReturnsModuleWithHeaders );  
-        //xTestSuite.add( compose_hasDependencies_ReturnsModuleWithDependencies );
-        //xTestSuite.add( compose_InvalidContent_ThrowsErrorInvalidContent );
-        //xTestSuite.add( compose_hasExports_ReturnsModuleWithExports );  
-        //xTestSuite.add( compose_hasExportsButContentNotFunction_ThrowsErrorHasExportsButContentNotFunction );  
-        //xTestSuite.add( compose_ExportsNotArray_ThrowsErrorExportsNotArray );  
-        //xTestSuite.add( compose_DependenciesNotArray_ThrowsErrorDependenciesNotArray );
-        //xTestSuite.add( compose_hasMultipleExports_ReturnsModuleWithMultipleExports );
+        xTestSuite.add( compose_onlyContent_ReturnsModuleWithContent ); 
+        xTestSuite.add( compose_InvalidState_ThrowsErrorInvalidState );  
+        xTestSuite.add( compose_hasHeaders_ReturnsModuleWithHeaders );  
+        xTestSuite.add( compose_hasDependencies_ReturnsModuleWithDependencies );
+        xTestSuite.add( compose_InvalidContent_ThrowsErrorInvalidContent );
+        xTestSuite.add( compose_hasExports_ReturnsModuleWithExports );  
+        xTestSuite.add( compose_hasExportsButContentNotFunction_ThrowsErrorHasExportsButContentNotFunction );  
+        xTestSuite.add( compose_ExportsNotArray_ThrowsErrorExportsNotArray );  
+        xTestSuite.add( compose_DependenciesNotArray_ThrowsErrorDependenciesNotArray );
+        xTestSuite.add( compose_hasMultipleExports_ReturnsModuleWithMultipleExports );
         xTestSuite.add( compose_hasName_ReturnsModuleWithName );
-        //xTestSuite.add( compose_NameNotString_ThrowsErrorNameNotString );
+        xTestSuite.add( compose_NameNotString_ThrowsErrorNameNotString );
+        xTestSuite.add( compose_hasAll_ReturnsModuleWithAll );
       xTestSuite.test();
     }
   });

@@ -19,6 +19,6 @@ define([
 		},
 		"ExceptionTest": true,
 		"ExpectedOutput": { message: "Error: State has exports but content is not of type function." },
-		"Debug": true
+		"Debug": false
 	};
 });

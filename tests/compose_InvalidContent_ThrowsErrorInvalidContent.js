@@ -19,6 +19,6 @@ define([
 		},
 		"ExceptionTest": true,
 		"ExpectedOutput": { message: "Error: The state content is not valid." },
-		"Debug": true
+		"Debug": false
 	};
 });

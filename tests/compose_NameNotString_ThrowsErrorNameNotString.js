@@ -19,6 +19,6 @@ define([
 		},
 		"ExceptionTest": true,
 		"ExpectedOutput": { message: "Error: The state name is not of type string." },
-		"Debug": true
+		"Debug": false
 	};
 });

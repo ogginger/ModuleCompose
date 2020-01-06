@@ -19,6 +19,6 @@ define([
 		},
 		"ExceptionTest": true,
 		"ExpectedOutput": { message: "Error: The state exports is not of type array." },
-		"Debug": true
+		"Debug": false
 	};
 });

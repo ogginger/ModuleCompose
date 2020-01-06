@@ -18,6 +18,6 @@ define([
 			return compose.call( Input );
 		},
 		"ExpectedOutput": 'define(["dep"], function(dep) {});',
-		"Debug": true
+		"Debug": false
 	};
 });

@@ -18,6 +18,6 @@ define([
 			return compose.call( Input );
 		},
 		"ExpectedOutput": "This is a header.\ndefine({});",
-		"Debug": true
+		"Debug": false
 	};
 });
