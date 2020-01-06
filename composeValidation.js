@@ -1,11 +1,22 @@
 //composeValidation.js: Functional Logic.
 
-define([], function() {
+define([
+  "underscore"
+], function(
+  _
+) {
   return [
     function( Input ) {
       if (
-        JSON.stringify( Object.keys( Input ) ) !=
-        JSON.stringify( ["Headers", "Name", "Dependencies", "Exports", "Content" ] )
+        JSON.stringify( 
+          _.difference([
+            "Headers", 
+            "Name", 
+            "Dependencies", 
+            "Exports", 
+            "Content" 
+          ],  Object.keys( Input ))) !=
+        JSON.stringify([])
       ) {
         throw { message: "Error: The state of the module was invalid." };
       } else if ( typeof Input.Content != "string" ) {
