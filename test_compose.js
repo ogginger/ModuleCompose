@@ -16,7 +16,10 @@ define([
   "tests/compose_hasMultipleExports_ReturnsModuleWithMultipleExports",
   "tests/compose_hasName_ReturnsModuleWithName",
   "tests/compose_NameNotString_ThrowsErrorNameNotString",
-  "tests/compose_hasAll_ReturnsModuleWithAll"
+  "tests/compose_hasAll_ReturnsModuleWithAll",
+  "tests/compose_Input_ReturnsModuleWithInput",
+  "tests/compose_InvalidInput_ThrowsErrorInvalidInput",
+  "tests/compose_InputNotObject_ThrowsErrorInputNotObject"
 ], function(
   TestSuite,
   log,
@@ -33,7 +36,10 @@ define([
   compose_hasMultipleExports_ReturnsModuleWithMultipleExports,
   compose_hasName_ReturnsModuleWithName,
   compose_NameNotString_ThrowsErrorNameNotString,
-  compose_hasAll_ReturnsModuleWithAll
+  compose_hasAll_ReturnsModuleWithAll,
+  compose_Input_ReturnsModuleWithInput,
+  compose_InvalidInput_ThrowsErrorInvalidInput,
+  compose_InputNotObject_ThrowsErrorInputNotObject
 ) {
   return TestSuite.extend({
     "initialize": function() {
@@ -53,6 +59,9 @@ define([
         xTestSuite.add( compose_hasName_ReturnsModuleWithName );
         xTestSuite.add( compose_NameNotString_ThrowsErrorNameNotString );
         xTestSuite.add( compose_hasAll_ReturnsModuleWithAll );
+        xTestSuite.add( compose_Input_ReturnsModuleWithInput );
+        xTestSuite.add( compose_InvalidInput_ThrowsErrorInvalidInput );
+        xTestSuite.add( compose_InputNotObject_ThrowsErrorInputNotObject );
       xTestSuite.test();
     }
   });

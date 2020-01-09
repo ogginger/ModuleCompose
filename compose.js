@@ -12,9 +12,14 @@ define([
     var sModule = "";
 
     validate({
-      "Data": State,
+      "Data": {
+        "Object": State,
+        "Options": Input
+      },
       "Validation": composeValidation
     });
+
+    Object.assign( State, Input );
 
     if ( State.Headers ) {
       sModule = State.Headers;
