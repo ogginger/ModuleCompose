@@ -8,5 +8,5 @@
     },
     exclude: [ "underscore" ],
     name: "compose",
-    out: "module_parse.min.js"
+    out: "module_compose.min.js"
 })
