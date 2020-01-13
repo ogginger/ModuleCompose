@@ -8,7 +8,7 @@ define([
 	return {
 		"Name":"compose_hasMultipleExports_ReturnsModuleWithMultipleExports",
 		"Input": {
-			"Headers": undefined,
+			"Header": undefined,
 			"Name": undefined,
 			"Dependencies": ["dep", "dep2" ],
 			"Exports": ["dep", "dep2" ],

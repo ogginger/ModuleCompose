@@ -8,7 +8,7 @@ define([
 	return {
 		"Name":"compose_InvalidContent_ThrowsErrorInvalidContent",
 		"Input": {
-			"Headers": undefined,
+			"Header": undefined,
 			"Name": undefined,
 			"Dependencies": undefined,
 			"Exports": undefined,

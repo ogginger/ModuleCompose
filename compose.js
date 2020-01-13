@@ -21,8 +21,8 @@ define([
 
     Object.assign( State, Input );
 
-    if ( State.Headers ) {
-      sModule = State.Headers;
+    if ( State.Header ) {
+      sModule = State.Header;
     }
 
     sModule += "define(";

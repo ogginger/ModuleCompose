@@ -1,4 +1,4 @@
-//compose_hasHeaders_ReturnsModuleWithHeaders.js: Testing logic.
+//compose_hasHeader_ReturnsModuleWithHeader.js: Testing logic.
 
 define([
 	"compose"
@@ -6,9 +6,9 @@ define([
 	compose
 ) {
 	return {
-		"Name":"compose_hasHeaders_ReturnsModuleWithHeaders",
+		"Name":"compose_hasHeader_ReturnsModuleWithHeader",
 		"Input": {
-			"Headers": "This is a header.\n",
+			"Header": "This is a header.\n",
 			"Name": undefined,
 			"Dependencies": undefined,
 			"Exports": undefined,

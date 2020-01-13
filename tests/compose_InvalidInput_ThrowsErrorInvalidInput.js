@@ -12,7 +12,7 @@ define([
 				"Property": "Value"
 			},
 			"Object": {
-				"Headers": undefined,
+				"Header": undefined,
 				"Name": undefined,
 				"Dependencies": undefined,
 				"Exports": undefined,

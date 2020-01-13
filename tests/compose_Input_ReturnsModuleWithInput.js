@@ -9,13 +9,13 @@ define([
 		"Name":"compose_Input_ReturnsModuleWithInput",
 		"Input": {
 			"Options": {
-				"Headers": "//This is a header.\n",
+				"Header": "//This is a header.\n",
 				"Name": "test",
 				"Dependencies": [ "dep" ],
 				"Exports": ["dep"]
 			},
 			"Object": {
-				"Headers": undefined,
+				"Header": undefined,
 				"Name": undefined,
 				"Dependencies": undefined,
 				"Exports": undefined,

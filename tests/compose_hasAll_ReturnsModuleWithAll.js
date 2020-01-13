@@ -8,7 +8,7 @@ define([
 	return {
 		"Name":"compose_hasAll_ReturnsModuleWithAll",
 		"Input": {
-			"Headers": "This is a header.\n",
+			"Header": "This is a header.\n",
 			"Name": "name",
 			"Dependencies": [ "dep", "dep2" ],
 			"Exports": [ "dep", "dep2" ],

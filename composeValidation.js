@@ -14,7 +14,7 @@ define([
       } else if ( Input.Options &&
         JSON.stringify( 
           _.difference(Object.keys( Input.Options ), [
-            "Headers", 
+            "Header", 
             "Name", 
             "Dependencies", 
             "Exports", 
@@ -31,7 +31,7 @@ define([
       if (
         JSON.stringify( 
           _.difference([
-            "Headers", 
+            "Header", 
             "Name", 
             "Dependencies", 
             "Exports", 

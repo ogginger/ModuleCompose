@@ -8,7 +8,7 @@ define([
 	return {
 		"Name":"compose_DependenciesNotArray_ThrowsErrorDependenciesNotArray",
 		"Input": {
-			"Headers": undefined,
+			"Header": undefined,
 			"Name": undefined,
 			"Dependencies": '["dep"]',
 			"Exports": undefined,

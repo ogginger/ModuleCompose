@@ -8,7 +8,7 @@ define([
 	return {
 		"Name":"compose_NameNotString_ThrowsErrorNameNotString",
 		"Input": {
-			"Headers": undefined,
+			"Header": undefined,
 			"Name": [ "test" ],
 			"Dependencies": undefined,
 			"Exports": undefined,

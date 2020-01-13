@@ -8,7 +8,7 @@ define([
 	return {
 		"Name":"compose_State_ReturnsModule",
 		"Input": {
-			"Headers": undefined,
+			"Header": undefined,
 			"Name": undefined,
 			"Dependencies": undefined,
 			"Exports": undefined,
