@@ -25,7 +25,7 @@ define([
       sModule = State.Header;
     }
 
-    sModule += "define(";
+    sModule += State.Type + "(";
     if ( State.Content ) {
       if ( State.Name ) {
         sModule += '"' + State.Name + '", ';
@@ -37,7 +37,7 @@ define([
 
       if (
         State.Exports &&
-        State.Content.match(/^function\([\s\S]*\)\s*{[\s\S]*}$/i)
+        State.Content.match(/^function\([a-zA-Z0-9,\s]*\)\s*{[\s\S]*}$/i)
       ) {
         sModule += "function(";
         State.Exports.forEach(function( _export, index ) {
@@ -49,7 +49,7 @@ define([
             sModule += ","
           }
         });
-        sModule += ") " + new RegExp(/^function\([\s\S]*\)\s*({[\s\S]*})$/i).exec( State.Content )[1];
+        sModule += ") " + new RegExp(/^function\([a-zA-Z0-9_$,\s]*\)\s*({[\s\S]*})$/i).exec( State.Content )[1];
       } else {
         sModule += State.Content;
       }
